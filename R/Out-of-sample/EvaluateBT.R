@@ -1,12 +1,20 @@
-
-
-## EVALUATE BT
+##-- 3C-STAD MODEL #### 3C-STAD MODEL #### 3C-STAD MODEL --##
+##-- 3C-STAD MODEL #### 3C-STAD MODEL #### 3C-STAD MODEL --##
+##
+##  R code to compare the forecast accuracy of different 
+##  models (Table 2 in the chapter)
+##  
+##  Authors: Ugofilippo Basellini
+##           Giancarlo Camarda
+##  Last update: 24/03/2019
+##
+##---------------------------------------------------------##
 
 ## cleaning the workspace
 rm(list=ls(all=TRUE))
 
 ## BT scenario
-BT <- 30
+BT <- 10
 if (BT==10){
   setwd("~/Documents/Demography/Work/STADall/Github/3C-STADmodel/R/Data/BT10y") 
 }else if (BT==20){
@@ -16,8 +24,8 @@ if (BT==10){
 }
 
 ## select Population of interest
-cou <- "SWE"
-sex <- "Males"
+cou <- "SWE"      ## "CHE" or "SWE"
+sex <- "Males"    ## "Females" or "Males"
 
 ## load STAD data
 name <- paste(cou,sex,"3C-STAD.Rdata",sep="_")
@@ -58,7 +66,8 @@ load(name)
 LMXBOOT_LC <- LMXBOOT
 E0BOOT_LC <- E0BOOT
 G0BOOT_LC <- G0BOOT
-## bt
+
+## Out-of-sample (backtest) data
 MX_BT <- exp(LHAZact.fore)
 e0_BT <- e0BT
 g0_BT <- g0BT
@@ -157,6 +166,7 @@ HU_ACC <- ForecastAccuracyIndic(ages=ages,MXact = MX_BT,MXforeMEAN = exp(LMX_HU_
                                   GiniAct = 100*g0_BT,GiniForeMEAN = 100*g0_HU_med,GiniForeLOW = 100*g0_HU_low,GiniForeUP = 100*g0_HU_up,
                                   alpha = lev.p,ndigits = 2)
 
+## results for the chapter
 df <- cbind(STAD_ACC$accuracy,LC_ACC$accuracy,CODA_ACC$accuracy,HU_ACC$accuracy)
 colnames(df) <- c("STAD","LC","CODA","HU")
 df

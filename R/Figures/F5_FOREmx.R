@@ -1,5 +1,14 @@
-
-## PLOT FORE
+##-- 3C-STAD MODEL #### 3C-STAD MODEL #### 3C-STAD MODEL --##
+##-- 3C-STAD MODEL #### 3C-STAD MODEL #### 3C-STAD MODEL --##
+##
+##  R code to generate Figure 5 of the chapter 
+##  Forecast log-mortality 
+##  
+##  Authors: Ugofilippo Basellini
+##           Giancarlo Camarda
+##  Last update: 24/03/2019
+##
+##---------------------------------------------------------##
 
 ## cleaning the workspace
 rm(list=ls(all=TRUE))
@@ -349,15 +358,17 @@ grid();box()
 mtext(text = expression(log(m[x])),side=2,
       line = 1.75,cex=cex.y.lab,las=3)
 matlines(ages,exp(LMXobs_SWEfemales),col=col.obs[1],lty=1)
-lines(ages,exp(LMX_STAD_SWEfemales[,n.fore]),col=col.mod[1],lwd=2)
 lines(ages.lc_SWEfemales,exp(LMX_LC_SWEfemales[,n.fore]),col=col.mod[2],lwd=2,lty=5)
 lines(ages,exp(LMX_CODA_SWEfemales[1:m,n.fore]),col=col.mod[3],lwd=2,lty=5)
 lines(ages,exp(LMX_HU_SWEfemales[,n.fore]),col=col.mod[4],lwd=2,lty=5)
 xx <- c(ages,rev(ages))
 yy <- c(exp(LMX_STAD_SWEfemales_low[,n.fore]),rev(exp(LMX_STAD_SWEfemales_up[,n.fore])))
 polygon(x=xx,y=yy,col=col.t[1],border = col.mod[1])
-legend("bottomright",c("Obs","3C-STAD","LC","CODA","HU"),col=c(col.obs[1],col.mod),lty=c(1,1,5,5,5),bty="n",
-       cex=cex.leg,lwd=c(1,2,2,2,2))
+lines(ages,exp(LMX_STAD_SWEfemales[,n.fore]),col=col.mod[1],lwd=2)
+legend("bottomright",c("Obs","3C-STAD","LC","CODA","HU"),col=c("grey80",col.mod),lty=c(1,1,5,5,5),bty="n",
+       cex=cex.leg,lwd=c(2,2,2,2,2))
+legend(79.5, 0.00031, c(""),col=col.t[1],
+       pch=15, pt.cex=1.35,title="", bg="white",bty="n",cex=0.75)
 
 ## LMX - SWE MAL
 plot(ages,exp(LMXobs_SWEmales[,n]),t="n",main="Sweden - Males",ylim=ylimLMX,
@@ -365,8 +376,6 @@ plot(ages,exp(LMXobs_SWEmales[,n]),t="n",main="Sweden - Males",ylim=ylimLMX,
 axis(1,at=seq(0,100,20),labels = rep("",6))
 axis(2,at=c(1e-5,1e-3,1e-1,1e1),labels = rep("",4))
 grid();box()
-# mtext(text = expression(log(m[x])),side=2,
-#       line = 1.75,cex=cex.y.lab,las=3)
 matlines(ages,exp(LMXobs_SWEmales),col=col.obs[1],lty=1)
 lines(ages.lc_SWEmales,exp(LMX_LC_SWEmales[,n.fore]),col=col.mod[2],lwd=2,lty=5)
 lines(ages,exp(LMX_CODA_SWEmales[1:m,n.fore]),col=col.mod[3],lwd=2,lty=5)
@@ -380,8 +389,6 @@ lines(ages,exp(LMX_STAD_SWEmales[,n.fore]),col=col.mod[1],lwd=2)
 plot(ages,exp(LMXobs_CHEfemales[,n]),t="n",main="Switzerland - Females",ylim=ylimLMX,
      xlab="",ylab="",axes=F,cex.main=cex.main,log="y")
 axis(1);axis(2)
-# axis(1,at=seq(1960,2040,20),labels = rep("",5))
-# axis(2,las=2,cex.axis=cex.y.axis)
 grid();box()
 mtext(text = expression(log(m[x])),side=2,
       line = 1.75,cex=cex.y.lab,las=3)
@@ -407,11 +414,11 @@ lines(ages,exp(LMX_HU_CHEmales[,n.fore]),col=col.mod[4],lwd=2,lty=5)
 yy <- c(exp(LMX_STAD_CHEmales_low[,n.fore]),rev(exp(LMX_STAD_CHEmales_up[,n.fore])))
 polygon(x=xx,y=yy,col=col.t[1],border = col.mod[1])
 lines(ages,exp(LMX_STAD_CHEmales[,n.fore]),col=col.mod[1],lwd=2)
-legend("bottomright",c("Obs","3C-STAD","LC","CODA","HU"),col=c(col.obs[1],col.mod),lty=c(1,1,5,5,5),bty="n",
-       cex=cex.leg,lwd=c(1,2,2,2,2))
+legend("bottomright",c("Obs","3C-STAD","LC","CODA","HU"),col=c("grey80",col.mod),lty=c(1,1,5,5,5),bty="n",
+       cex=cex.leg,lwd=c(2,2,2,2,2))
+legend(79.5, 0.00031, c(""),col=col.t[1],
+       pch=15, pt.cex=1.35,title="", bg="white",bty="n",cex=0.75)
 par(mfrow=c(1,1))
 title(xlab = "Ages",cex.lab=cex.x.lab,
       outer = TRUE, line = 1)
 dev.off()
-
-

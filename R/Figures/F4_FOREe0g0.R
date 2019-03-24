@@ -1,5 +1,14 @@
-
-## PLOT FORE
+##-- 3C-STAD MODEL #### 3C-STAD MODEL #### 3C-STAD MODEL --##
+##-- 3C-STAD MODEL #### 3C-STAD MODEL #### 3C-STAD MODEL --##
+##
+##  R code to generate Figure 4 of the chapter 
+##  Forecast life expectancy / gini 
+##  
+##  Authors: Ugofilippo Basellini
+##           Giancarlo Camarda
+##  Last update: 24/03/2019
+##
+##---------------------------------------------------------##
 
 ## cleaning the workspace
 rm(list=ls(all=TRUE))
