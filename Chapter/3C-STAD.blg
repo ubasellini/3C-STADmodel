@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: 3C-STAD.aux
+The style file: apalike.bst
+Database file #1: Biblio.bib
+Warning--there's a number but no volume in lotka1939theorie
+Warning--can't use both author and editor fields in pearson1897chances
+You've used 67 entries,
+            1935 wiz_defined-function locations,
+            866 strings with 14968 characters,
+and the built_in function-call counts, 25534 in all, are:
+= -- 2547
+> -- 886
+< -- 52
++ -- 315
+- -- 284
+* -- 2179
+:= -- 4421
+add.period$ -- 203
+call.type$ -- 67
+change.case$ -- 467
+chr.to.int$ -- 64
+cite$ -- 69
+duplicate$ -- 967
+empty$ -- 1883
+format.name$ -- 395
+if$ -- 4962
+int.to.chr$ -- 4
+int.to.str$ -- 0
+missing$ -- 71
+newline$ -- 339
+num.names$ -- 202
+pop$ -- 372
+preamble$ -- 1
+purify$ -- 477
+quote$ -- 0
+skip$ -- 725
+stack$ -- 0
+substring$ -- 2007
+swap$ -- 92
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 384
+warning$ -- 2
+while$ -- 229
+width$ -- 0
+write$ -- 864
+(There were 2 warnings)

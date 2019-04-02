@@ -1,0 +1,387 @@
+\begin{thebibliography}{}
+
+\bibitem[Aitchison, 1986]{aitchison1986statistical}
+Aitchison, J. (1986).
+\newblock {\em The Statistical Analysis of Compositional Data}.
+\newblock London: Chapman and Hall.
+
+\bibitem[Bardoutsos et~al., 2018]{bardoutsos2018projecting}
+Bardoutsos, A., de~Beer, J., and Janssen, F. (2018).
+\newblock Projecting delay and compression of mortality.
+\newblock {\em Genus}, 74(1).
+
+\bibitem[Basellini and Camarda, 2019]{basellini2019stad}
+Basellini, U. and Camarda, C.~G. (2019).
+\newblock Modelling and forecasting adult age-at-death distributions.
+\newblock {\em Population Studies}, 73(1):119--138.
+
+\bibitem[Bergeron-Boucher et~al., 2017a]{bergeron2017coherent}
+Bergeron-Boucher, M.-P., Canudas-Romo, V., Oeppen, J., and Vaupel, J.~W.
+  (2017a).
+\newblock Coherent forecasts of mortality with compositional data analysis.
+\newblock {\em Demographic Research}, 37(17):527--566.
+
+\bibitem[Bergeron-Boucher et~al., 2015]{bergeron2015decomposing}
+Bergeron-Boucher, M.-P., Ebeling, M., and Canudas-Romo, V. (2015).
+\newblock Decomposing changes in life expectancy: Compression versus shifting
+  mortality.
+\newblock {\em Demographic Research}, 33(14):391--424.
+
+\bibitem[Bergeron-Boucher et~al., 2017b]{bergeron2017what}
+Bergeron-Boucher, M.-P., Kj{\ae}rgaard, S., and Oeppen, J. (2017b).
+\newblock What to forecast? {A}n exploratory study of the implication of using
+  different indicators to forecast mortality.
+\newblock In {\em XXVIII International Population Conference}.
+
+\bibitem[Bohk-Ewald et~al., 2017]{bohk2017lifespan}
+Bohk-Ewald, C., Ebeling, M., and Rau, R. (2017).
+\newblock {Lifespan Disparity as an Additional Indicator for Evaluating
+  Mortality Forecasts}.
+\newblock {\em Demography}, 54(4):1559--1577.
+
+\bibitem[Bongaarts, 2005]{bongaarts2005long}
+Bongaarts, J. (2005).
+\newblock Long-range trends in adult mortality: Models and projection methods.
+\newblock {\em Demography}, 42(1):23--49.
+
+\bibitem[Booth and Tickle, 2008]{booth2008mortality}
+Booth, H. and Tickle, L. (2008).
+\newblock Mortality modelling and forecasting: A review of methods.
+\newblock {\em Annals of Actuarial Science}, 3(1-2):3--43.
+
+\bibitem[Brillinger, 1986]{brillinger1986biometrics}
+Brillinger, D.~R. (1986).
+\newblock A biometrics invited paper with discussion: The natural variability
+  of vital rates and associated statistics.
+\newblock {\em Biometrics}, 42(4):693--734.
+
+\bibitem[Cairns et~al., 2009]{cairns2009quantitative}
+Cairns, A.~J., Blake, D., Dowd, K., Coughlan, G.~D., Epstein, D., Ong, A., and
+  Balevich, I. (2009).
+\newblock {A quantitative comparison of stochastic mortality models using data
+  from England and Wales and the United States}.
+\newblock {\em North American Actuarial Journal}, 13(1):1--35.
+
+\bibitem[Camarda, 2012]{camarda2012mortalitysmooth}
+Camarda, C.~G. (2012).
+\newblock {MortalitySmooth: An \texttt{R} Package for Smoothing Poisson Counts
+  with $P$-Splines}.
+\newblock {\em Journal of Statistical Software}, 50:1--24.
+\newblock Available on \texttt{www.jstatsoft.org/v50/i01}.
+
+\bibitem[Camarda et~al., 2016]{camarda2016sums}
+Camarda, C.~G., Eilers, P.~H., and Gampe, J. (2016).
+\newblock Sums of smooth exponentials to decompose complex series of counts.
+\newblock {\em Statistical Modelling}, 16(4):279--296.
+
+\bibitem[Canudas-Romo, 2008]{canudas2008modal}
+Canudas-Romo, V. (2008).
+\newblock The modal age at death and the shifting mortality hypothesis.
+\newblock {\em Demographic Research}, 19:1179--1204.
+
+\bibitem[Chatfield, 2000]{chatfield2000time}
+Chatfield, C. (2000).
+\newblock {\em Time-series forecasting}.
+\newblock Chapman \& Hall/CRC: London.
+
+\bibitem[Chiang, 1984]{chiang1984life}
+Chiang, C.~L. (1984).
+\newblock {\em {The Life Table and its Application}}.
+\newblock Malabar, FL: Krieger.
+
+\bibitem[Csete and Grob, 2012]{csete2012switzerland}
+Csete, J. and Grob, P.~J. (2012).
+\newblock Switzerland, {HIV} and the power of pragmatism: Lessons for drug
+  policy development.
+\newblock {\em International Journal of Drug Policy}, 23(1):82--86.
+
+\bibitem[de~Beer and Janssen, 2016]{de2016new}
+de~Beer, J. and Janssen, F. (2016).
+\newblock A new parametric model to assess delay and compression of mortality.
+\newblock {\em Population Health Metrics}, 14(1):46.
+
+\bibitem[Efron and Tibshirani, 1994]{efron1994introduction}
+Efron, B. and Tibshirani, R.~J. (1994).
+\newblock {\em An introduction to the bootstrap}.
+\newblock CRC press.
+
+\bibitem[Eilers, 2007]{eilers2007ill}
+Eilers, P.~H. (2007).
+\newblock Ill-posed problems with counts, the composite link model and
+  penalized likelihood.
+\newblock {\em Statistical Modelling}, 7(3):239--254.
+
+\bibitem[Eilers and Marx, 1996]{eilers1996flexible}
+Eilers, P. H.~C. and Marx, B.~D. (1996).
+\newblock {F}lexible {S}moothing with {$B$}-splines and {P}enalties (with
+  discussion).
+\newblock {\em Statistical Science}, 11(2):89--102.
+
+\bibitem[Fries, 1980]{fries1980aging}
+Fries, J.~F. (1980).
+\newblock Aging, natural death, and the compression of morbidity.
+\newblock {\em New England Journal of Medicine}, 303(3):130--135.
+
+\bibitem[Gage, 1993]{gage1993decline}
+Gage, T.~B. (1993).
+\newblock {The Decline of Mortality in England and Wales 1861 to 1964:
+  Decomposition by Cause of Death and Component of Mortality}.
+\newblock {\em Population Studies}, 47(1):47--66.
+
+\bibitem[Haberman and Renshaw, 2011]{haberman2011comparative}
+Haberman, S. and Renshaw, A. (2011).
+\newblock A comparative study of parametric mortality projection models.
+\newblock {\em Insurance: Mathematics and Economics}, 48(1):35--55.
+
+\bibitem[Heligman and Pollard, 1980]{heligman1980age}
+Heligman, L. and Pollard, J.~H. (1980).
+\newblock The age pattern of mortality.
+\newblock {\em Journal of the Institute of Actuaries}, 107(01):49--80.
+
+\bibitem[Horiuchi et~al., 2013]{horiuchi2013modal}
+Horiuchi, S., Ouellette, N., Cheung, S. L.~K., and Robine, J.-M. (2013).
+\newblock Modal age at death: lifespan indicator in the era of longevity
+  extension.
+\newblock {\em Vienna Yearbook of Population Research}, 11:37--69.
+
+\bibitem[{Human Mortality Database}, 2019]{HMD}
+{Human Mortality Database} (2019).
+\newblock {{University of California, Berkeley (USA)}} and {Max Planck
+  Institute for Demographic Research (Germany)}.
+\newblock Available at www.mortality.org or www.humanmortality.de (data
+  downloaded on 15 February 2019).
+
+\bibitem[Hyndman et~al., 2018a]{hyndman2018forecastR}
+Hyndman, R., Athanasopoulos, G., Bergmeir, C., Caceres, G., Chhay, L.,
+  O'Hara-Wild, M., Petropoulos, F., Razbash, S., Wang, E., and Yasmeen, F.
+  (2018a).
+\newblock {\em {forecast}: {F}orecasting functions for time series and linear
+  models}.
+\newblock R package version 8.4.
+
+\bibitem[Hyndman and Khandakar, 2008]{hyndman2008automatic}
+Hyndman, R. and Khandakar, Y. (2008).
+\newblock {Automatic time series forecasting: The forecast Package for R}.
+\newblock {\em Journal of Statistical Software}, 27(3):1--22.
+
+\bibitem[Hyndman et~al., 2018b]{demogRpackage}
+Hyndman, R.~J., Booth, H., Tickle, L., and Maindonald, J. (2018b).
+\newblock {\em demography: {Forecasting Mortality, Fertility, Migration and
+  Population Data}}.
+\newblock R package version 1.21.
+
+\bibitem[Hyndman et~al., 2013]{hyndman2013coherent}
+Hyndman, R.~J., Booth, H., and Yasmeen, F. (2013).
+\newblock Coherent mortality forecasting: the product-ratio method with
+  functional time series models.
+\newblock {\em Demography}, 50(1):261--283.
+
+\bibitem[Hyndman and Ullah, 2007]{hyndman2007robust}
+Hyndman, R.~J. and Ullah, M.~S. (2007).
+\newblock Robust forecasting of mortality and fertility rates: a functional
+  data approach.
+\newblock {\em Computational Statistics \& Data Analysis}, 51(10):4942--4956.
+
+\bibitem[Janssen and de~Beer, 2019]{janssen2019timing}
+Janssen, F. and de~Beer, J. (2019).
+\newblock {The timing of the transition from mortality compression to mortality
+  delay in Europe, Japan and the United States}.
+\newblock {\em Genus}, 75(1).
+
+\bibitem[Janssen et~al., 2013]{janssen2013smoking}
+Janssen, F., van Wissen, L. J.~G., and Kunst, A.~E. (2013).
+\newblock Including the smoking epidemic in internationally coherent mortality
+  projections.
+\newblock {\em Demography}, 50(4):1341--1362.
+
+\bibitem[Kannisto, 2000]{kannisto2000measuring}
+Kannisto, V. (2000).
+\newblock Measuring the compression of mortality.
+\newblock {\em Demographic Research}, 3(article 6):doi:
+  10.4054/DemRes.2000.3.6.
+
+\bibitem[Kannisto, 2001]{kannisto2001mode}
+Kannisto, V. (2001).
+\newblock Mode and dispersion of the length of life.
+\newblock {\em Population: An English Selection}, 13:159--171.
+
+\bibitem[Klein and Moeschberger, 2005]{klein2005survival}
+Klein, J.~P. and Moeschberger, M.~L. (2005).
+\newblock {\em {Survival Analysis: Techniques for Censored and Truncated
+  Data}}.
+\newblock Springer Science \& Business Media, second edition.
+
+\bibitem[Kostaki, 1992]{kostaki1992nine}
+Kostaki, A. (1992).
+\newblock A nine-parameter version of the {Heligman-Pollard} formula.
+\newblock {\em Mathematical Population Studies}, 3(4):277--288.
+
+\bibitem[Lee and Miller, 2001]{lee2001evaluating}
+Lee, R. and Miller, T. (2001).
+\newblock Evaluating the performance of the {L}ee-{C}arter method for
+  forecasting mortality.
+\newblock {\em Demography}, 38(4):537--549.
+
+\bibitem[Lee and Carter, 1992]{lee1992modeling}
+Lee, R.~D. and Carter, L.~R. (1992).
+\newblock {Modeling and forecasting US mortality}.
+\newblock {\em Journal of the American Statistical Association},
+  87(419):659--671.
+
+\bibitem[Lexis, 1878]{lexis1878duree}
+Lexis, W. H. R.~A. (1878).
+\newblock Sur la dur{\'e}e normale de la vie humaine et sur la th{\'e}orie de
+  la stabilit{\'e} des rapports statistiques.
+\newblock {\em Annales de D{\'e}mographie Internationale}, 2(5):447--460.
+
+\bibitem[Li and Lee, 2005]{li2005coherent}
+Li, N. and Lee, R. (2005).
+\newblock Coherent mortality forecasts for a group of populations: {A}n
+  extension of the {L}ee-{C}arter method.
+\newblock {\em Demography}, 42(3):575--594.
+
+\bibitem[Li et~al., 2013]{li2013extending}
+Li, N., Lee, R., and Gerland, P. (2013).
+\newblock Extending the {L}ee-{C}arter method to model the rotation of age
+  patterns of mortality decline for long-term projections.
+\newblock {\em Demography}, 50(6):2037--2051.
+
+\bibitem[Lotka, 1939]{lotka1939theorie}
+Lotka, A.~J. (1939).
+\newblock {Th{\'e}orie analytique des associations biologiques. Part II.
+  Analyse d{\'e}mographique avec application particuliere al'espece humaine}.
+\newblock {\em Actualit{\'e}s Scientifiques et Industrielles}, (780).
+
+\bibitem[Mazzuco et~al., 2018]{mazzuco2018mortality}
+Mazzuco, S., Scarpa, B., and Zanotto, L. (2018).
+\newblock A mortality model based on a mixture distribution function.
+\newblock {\em Population Studies}, 72(2):191--200.
+
+\bibitem[Oeppen, 2008]{oeppen2008coherent}
+Oeppen, J. (2008).
+\newblock Coherent forecasting of multiple-decrement life tables: a test using
+  {J}apanese cause of death data.
+\newblock In {\em Compositional Data Analysis Conference}.
+
+\bibitem[Oeppen and Camarda, 2013]{oeppen2013coherent}
+Oeppen, J. and Camarda, C.~G. (2013).
+\newblock Coherent forecasting of multiple-decrement life tables: compositional
+  models for {French Cause of Death} data, 1925-2008.
+\newblock In {\em Joint Eurostat/UNECE Work Session on Demographic
+  Projections}.
+
+\bibitem[Pascariu et~al., 2019]{pascariu2019maximum}
+Pascariu, M.~D., Lenart, A., and Canudas-Romo, V. (2019).
+\newblock The maximum entropy mortality model: forecasting mortality using
+  statistical moments.
+\newblock {\em Scandinavian Actuarial Journal}, pages 1--25.
+
+\bibitem[Pawlowsky-Glahn and Buccianti, 2011]{CoDa2011}
+Pawlowsky-Glahn, V. and Buccianti, A., editors (2011).
+\newblock {\em {C}ompositional {D}ata {A}nalysis: {T}heory and {A}pplications}.
+\newblock Wiley.
+
+\bibitem[Pearson, 1897]{pearson1897chances}
+Pearson, K. (1897).
+\newblock {\em The Chances of Death, and Other Studies in Evolution}, volume~1.
+\newblock E. Arnold.
+
+\bibitem[Pfaff, 2008a]{pfaff2008analysis}
+Pfaff, B. (2008a).
+\newblock {\em Analysis of integrated and cointegrated time series with {R}}.
+\newblock Springer Science \& Business Media.
+
+\bibitem[Pfaff, 2008b]{pfaff2008var}
+Pfaff, B. (2008b).
+\newblock {VAR, SVAR and SVEC models: Implementation within R package vars}.
+\newblock {\em Journal of Statistical Software}, 27(4):1--32.
+
+\bibitem[Pollard, 1987]{pollard1987projection}
+Pollard, J.~H. (1987).
+\newblock Projection of age-specific mortality rates.
+\newblock {\em Population Bulletin of the United Nations}, 21-22:55--69.
+
+\bibitem[{R Development Core Team}, 2018]{Rcite}
+{R Development Core Team} (2018).
+\newblock {\em {R}: {A} {L}anguage and {E}nvironment for {S}tatistical
+  {C}omputing}.
+\newblock R Foundation for Statistical Computing, Vienna, Austria.
+
+\bibitem[Ramsay and Silverman, 2005]{ramsay2005FDA}
+Ramsay, J.~O. and Silverman, B.~W. (2005).
+\newblock {\em {F}unctional {D}ata {A}nalysis}.
+\newblock Springer-Verlag, 2nd edition.
+
+\bibitem[Remund et~al., 2018]{remund2018young}
+Remund, A., Camarda, C.~G., and Riffe, T. (2018).
+\newblock A cause-of-death decomposition of young adult excess mortality.
+\newblock {\em Demography}, 55(3):957--978.
+
+\bibitem[Seligman et~al., 2016]{seligman2016convergence}
+Seligman, B., Greenberg, G., and Tuljapurkar, S. (2016).
+\newblock Convergence in male and female life expectancy: Direction, age
+  pattern, and causes.
+\newblock {\em Demographic Research}, 34:1063--1074.
+
+\bibitem[Shang et~al., 2011]{shang2011point}
+Shang, H.~L., Booth, H., and Hyndman, R. (2011).
+\newblock Point and interval forecasts of mortality rates and life expectancy:
+  A comparison of ten principal component methods.
+\newblock {\em Demographic Research}, 25(5):173--214.
+
+\bibitem[Siler, 1979]{siler1979competing}
+Siler, W. (1979).
+\newblock A competing-risk model for animal mortality.
+\newblock {\em Ecology}, 60(4):750--757.
+
+\bibitem[Stoeldraijer et~al., 2013]{stoeldraijer2013impact}
+Stoeldraijer, L., van Duin, C., van Wissen, L., and Janssen, F. (2013).
+\newblock {Impact of different mortality forecasting methods and explicit
+  assumptions on projected future life expectancy: The case of the
+  Netherlands}.
+\newblock {\em Demographic Research}, 29:323--354.
+
+\bibitem[Thiele, 1871]{thiele1871mathematical}
+Thiele, T.~N. (1871).
+\newblock {On a mathematical formula to express the rate of mortality
+  throughout the whole of life, tested by a series of observations made use of
+  by the Danish Life Insurance Company of 1871}.
+\newblock {\em Journal of the Institute of Actuaries and Assurance Magazine},
+  16(5):313--329.
+
+\bibitem[Thompson and Baker, 1981]{thompson1981composite}
+Thompson, R. and Baker, R. (1981).
+\newblock {Composite Link Functions in Generalized Linear Models}.
+\newblock {\em Applied Statistics}, 30(2):125--131.
+
+\bibitem[Vaupel and Lundstr{\"o}m, 1994]{vaupel1994longer}
+Vaupel, J. and Lundstr{\"o}m, H. (1994).
+\newblock Longer life expectancy? {E}vidence from {S}weden of reductions in
+  mortality rates at advanced ages.
+\newblock In {\em Studies in the Economics of Aging}, pages 79--102. University
+  of Chicago Press.
+
+\bibitem[Whelpton, 1928]{whelpton1928population}
+Whelpton, P.~K. (1928).
+\newblock {Population of the United States, 1925 to 1975}.
+\newblock {\em American Journal of Sociology}, pages 253--270.
+
+\bibitem[Whelpton, 1936]{whelpton1936empirical}
+Whelpton, P.~K. (1936).
+\newblock An empirical method of calculating future population.
+\newblock {\em Journal of the American Statistical Association},
+  31(195):457--473.
+
+\bibitem[Wilmoth and Horiuchi, 1999]{wilmoth1999rectangularization}
+Wilmoth, J.~R. and Horiuchi, S. (1999).
+\newblock {Rectangularization revisited: Variability of age at death within
+  human populations}.
+\newblock {\em Demography}, 36(4):475--495.
+
+\bibitem[Wilmoth and Lundstr{\"o}m, 1996]{wilmoth1996extreme}
+Wilmoth, J.~R. and Lundstr{\"o}m, H. (1996).
+\newblock Extreme longevity in five countries.
+\newblock {\em European Journal of Population/Revue Europ{\'e}enne de
+  D{\'e}mographie}, 12(1):63--93.
+
+\end{thebibliography}
