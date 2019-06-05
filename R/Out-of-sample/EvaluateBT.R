@@ -25,7 +25,7 @@ if (BT==10){
 
 ## select Population of interest
 cou <- "SWE"      ## "CHE" or "SWE"
-sex <- "Males"    ## "Females" or "Males"
+sex <- "Females"    ## "Females" or "Males"
 
 ## load STAD data
 name <- paste(cou,sex,"3C-STAD.Rdata",sep="_")
@@ -41,8 +41,13 @@ rm(list=setdiff(ls(),var.keep))
 ## load CODA data
 name <- paste(cou,sex,"CODA.Rdata",sep="_")
 load(name)
+LMXBOOT_CODA <- log(CoDa.ex1$MXBOOT)
+LMXBOOT_CODA <- aperm(LMXBOOT_CODA,c(2,1,3))
+LMXBOOT_CODA <- LMXBOOT_CODA[1:length(ages),,]
+E0BOOT_CODA <- CoDa.ex1$E0BOOT
+G0BOOT_CODA <- CoDa.ex1$G0BOOT
 var.keep <- c("LMXBOOT_STAD","E0BOOT_STAD","G0BOOT_STAD",
-              "CoDa.ex1",
+              "LMXBOOT_CODA","E0BOOT_CODA","G0BOOT_CODA",
               "ages","n.fore","years.fore",
               "cou","sex")
 rm(list=setdiff(ls(),var.keep))
@@ -54,7 +59,7 @@ LMXBOOT_HU <- LMXBOOT
 E0BOOT_HU <- E0BOOT
 G0BOOT_HU <- G0BOOT
 var.keep <- c("LMXBOOT_STAD","E0BOOT_STAD","G0BOOT_STAD",
-              "CoDa.ex1",
+              "LMXBOOT_CODA","E0BOOT_CODA","G0BOOT_CODA",
               "LMXBOOT_HU","E0BOOT_HU","G0BOOT_HU",
               "ages","n.fore","years.fore",
               "cou","sex")
@@ -74,9 +79,9 @@ g0_BT <- g0BT
 var.keep <- c("LMXBOOT_STAD","E0BOOT_STAD","G0BOOT_STAD",
               "LMXBOOT_LC","E0BOOT_LC","G0BOOT_LC",
               "LMXBOOT_HU","E0BOOT_HU","G0BOOT_HU",
+              "LMXBOOT_CODA","E0BOOT_CODA","G0BOOT_CODA",
               "LMX_LC_cent","e0_LC_cent","g0_LC_cent",
               "ages","n.fore","years.fore","ages.lc",
-              "CoDa.ex1",
               "MX_BT","e0_BT","g0_BT",
               "cou","sex")
 rm(list=setdiff(ls(),var.keep))
@@ -134,16 +139,18 @@ for (i in 1:n.fore){
 
 
 ## CODA
-e0_CODA_med <- CoDa.ex1$ex.med
-e0_CODA_up <- CoDa.ex1$ex.up80
-e0_CODA_low <- CoDa.ex1$ex.lw80
-g0_CODA_med <- CoDa.ex1$gx.med
-g0_CODA_up <- CoDa.ex1$gx.up80
-g0_CODA_low <- CoDa.ex1$gx.lw80
-MX_CODA_med <- t(CoDa.ex1$mx.med)
-MX_CODA_up <-  t(CoDa.ex1$mx.up80)
-MX_CODA_low <- t(CoDa.ex1$mx.lw80)
-
+e0_CODA_med <- apply(E0BOOT_CODA, 1, median, na.rm=T)
+e0_CODA_up <- apply(E0BOOT_CODA, 1, quantile, prob=1- (1-lev.p)/2,na.rm=T)
+e0_CODA_low <- apply(E0BOOT_CODA, 1, quantile, prob=(1-lev.p)/2,na.rm=T)
+g0_CODA_med <- apply(G0BOOT_CODA, 1, median, na.rm=T)
+g0_CODA_up <- apply(G0BOOT_CODA, 1, quantile, prob=1- (1-lev.p)/2,na.rm=T)
+g0_CODA_low <- apply(G0BOOT_CODA, 1, quantile, prob=(1-lev.p)/2,na.rm=T)
+LMX_CODA_med <- LMX_CODA_up <-  LMX_CODA_low <- matrix(NA,length(ages),n.fore)
+for (i in 1:n.fore){
+  LMX_CODA_med[,i] <- apply(LMXBOOT_CODA[,i,],1,median, na.rm=T)
+  LMX_CODA_up[,i] <- apply(LMXBOOT_CODA[,i,], 1, quantile, prob=1- (1-lev.p)/2,na.rm=T)
+  LMX_CODA_low[,i] <- apply(LMXBOOT_CODA[,i,], 1, quantile, prob=(1-lev.p)/2,na.rm=T)
+}
 
 ## evaluate accuracy
 STAD_ACC <- ForecastAccuracyIndic(ages=ages,MXact = MX_BT,MXforeMEAN = exp(LMX_STAD_med),MXforeLOW = exp(LMX_STAD_low),MXforeUP = exp(LMX_STAD_up),
@@ -156,17 +163,45 @@ LC_ACC <- ForecastAccuracyIndic(ages=ages.lc,MXact = MX_BT[ages%in%ages.lc,],MXf
                                   GiniAct = 100*g0_BT,GiniForeMEAN = 100*g0_LC_med,GiniForeLOW = 100*g0_LC_low,GiniForeUP = 100*g0_LC_up,
                                   alpha = lev.p,ndigits = 2)
 
-CODA_ACC <- ForecastAccuracyIndic(ages=ages,MXact = MX_BT,MXforeMEAN = MX_CODA_med[1:length(ages),],MXforeLOW = MX_CODA_low[1:length(ages),],MXforeUP = MX_CODA_up[1:length(ages),],
-                                  LifeExpAct = e0_BT,LifeExpForeMEAN = e0_CODA_med,LifeExpForeLOW = e0_CODA_low,LifeExpForeUP = e0_CODA_up,
-                                  GiniAct = 100*g0_BT,GiniForeMEAN = 100*g0_CODA_med,GiniForeLOW = 100*g0_CODA_low,GiniForeUP = 100*g0_CODA_up,
-                                  alpha = lev.p,ndigits = 2)
+CODA_ACC <- ForecastAccuracyIndic(ages=ages,MXact = MX_BT,MXforeMEAN = exp(LMX_CODA_med),MXforeLOW = exp(LMX_CODA_low),MXforeUP = exp(LMX_CODA_up),
+                                LifeExpAct = e0_BT,LifeExpForeMEAN = e0_CODA_med,LifeExpForeLOW = e0_CODA_low,LifeExpForeUP = e0_CODA_up,
+                                GiniAct = 100*g0_BT,GiniForeMEAN = 100*g0_CODA_med,GiniForeLOW = 100*g0_CODA_low,GiniForeUP = 100*g0_CODA_up,
+                                alpha = lev.p,ndigits = 2)
+
 
 HU_ACC <- ForecastAccuracyIndic(ages=ages,MXact = MX_BT,MXforeMEAN = exp(LMX_HU_med),MXforeLOW = exp(LMX_HU_low),MXforeUP = exp(LMX_HU_up),
                                   LifeExpAct = e0_BT,LifeExpForeMEAN = e0_HU_med,LifeExpForeLOW = e0_HU_low,LifeExpForeUP = e0_HU_up,
                                   GiniAct = 100*g0_BT,GiniForeMEAN = 100*g0_HU_med,GiniForeLOW = 100*g0_HU_low,GiniForeUP = 100*g0_HU_up,
                                   alpha = lev.p,ndigits = 2)
 
+## compute Dawid-Sebastiani score
+DSS_e0_STAD <- round(DSSfun(e0_BT,E0BOOT_STAD),2)
+DSS_e0_LC <- round(DSSfun(e0_BT,E0BOOT_LC),2)
+DSS_e0_CODA <- round(DSSfun(e0_BT,E0BOOT_CODA),2)
+DSS_e0_HU <- round(DSSfun(e0_BT,E0BOOT_HU),2)
+DSS_g0_STAD <- round(DSSfun(100*g0_BT,100*G0BOOT_STAD),2)
+DSS_g0_LC <- round(DSSfun(100*g0_BT,100*G0BOOT_LC),2)
+DSS_g0_CODA <- round(DSSfun(100*g0_BT,100*G0BOOT_CODA),2)
+DSS_g0_HU <- round(DSSfun(100*g0_BT,100*G0BOOT_HU),2)
+DSS_mx_STAD <- round(DSSmatFun(MX_BT,exp(LMXBOOT_STAD)),2)
+DSS_mx_LC <- round(DSSmatFun(MX_BT,exp(LMXBOOT_LC)),2)
+DSS_mx_CODA <- round(DSSmatFun(MX_BT,exp(LMXBOOT_CODA)),2)
+DSS_mx_HU <- round(DSSmatFun(MX_BT,exp(LMXBOOT_HU)),2)
+
+
 ## results for the chapter
 df <- cbind(STAD_ACC$accuracy,LC_ACC$accuracy,CODA_ACC$accuracy,HU_ACC$accuracy)
 colnames(df) <- c("STAD","LC","CODA","HU")
 df
+
+## reshape and attach dss
+df1 <- cbind(df[1:3,],df[4:6,])
+rownames(df1) <- c("e0","g0","ln(mx)")
+df2 <- cbind(df1,
+             c(DSS_e0_STAD,DSS_g0_STAD,DSS_mx_STAD),
+             c(DSS_e0_LC,DSS_g0_LC,DSS_mx_LC),
+             c(DSS_e0_CODA,DSS_g0_CODA,DSS_mx_CODA),
+             c(DSS_e0_HU,DSS_g0_HU,DSS_mx_HU))
+colnames(df2) <- rep(c("3C-STAD","LC","CODA","HU"),3)
+colnames(df2[,9:12]) <- c("STAD","LC","CODA","HU")
+df2

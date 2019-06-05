@@ -252,19 +252,20 @@ CoDa<- function(dx, t, sex){
   
   dim(ex.int) <- dim(close.forecast.boot)
   
+  E0BOOT <- ex.int[,1,]
   
-  int95_ex <- apply(ex.int, c(1,2),
-                    function(ex.int) quantile(ex.int, prob=prob, type=8))
+  # int95_ex <- apply(ex.int, c(1,2),
+  #                   function(ex.int) quantile(ex.int, prob=prob, type=8))
   
   ## MX 
   mx.int <- apply(close.forecast.boot,3,
                   function(close.forecast.boot) LifeT_dx(close.forecast.boot, radix, a, n)$mx)
   
   dim(mx.int) <- dim(close.forecast.boot)
+  MXBOOT <- mx.int
   
-  
-  int95_mx <- apply(mx.int, c(1,2),
-                    function(mx.int) quantile(mx.int, prob=prob, type=8))
+  # int95_mx <- apply(mx.int, c(1,2),
+  #                   function(mx.int) quantile(mx.int, prob=prob, type=8))
   
   ## GINI
   gx.int <- matrix(NA,dim(mx.int)[1],dim(mx.int)[3])
@@ -272,19 +273,21 @@ CoDa<- function(dx, t, sex){
     gx.int[,jj] <- apply(mx.int[,,jj],1,GINI_func,ages=age2,sex=substr(sex,1,1))
     
   }
+  G0BOOT <- gx.int
   
-  int95_gx <- apply(gx.int, 1,
-                    function(gx.int) quantile(gx.int, prob=prob, type=8))
+  # int95_gx <- apply(gx.int, 1,
+  #                   function(gx.int) quantile(gx.int, prob=prob, type=8))
   
   
   #Return list
-  return(list(mx=mx, dx=forefit.dx, ex=ex,  
-              ex.lw95=int95_ex[1,,1], ex.lw80=int95_ex[2,,1],  ex.up95=int95_ex[5,,1], ex.up80=int95_ex[4,,1],
-              ex.med=int95_ex[3,,1], 
-              gx.lw95=int95_gx[1,], gx.lw80=int95_gx[2,],  gx.up95=int95_gx[5,], gx.up80=int95_gx[4,],
-              gx.med=int95_gx[3,],
-              mx.lw95=int95_mx[1,,], mx.lw80=int95_mx[2,,],  mx.up95=int95_mx[5,,], mx.up80=int95_mx[4,,],
-              mx.med=int95_mx[3,,],
-              VarExp=variability, ax=ax, bx=bx, kt=kt,
-              BK=BK.proj.for,BKsim=BK.proj.boot)) #BK and BKsim for the average have to be extracted and included in the CoDaCh function
+  return(list(mx=mx, dx=forefit.dx, ex=ex, 
+              E0BOOT=E0BOOT,G0BOOT=G0BOOT,MXBOOT=MXBOOT))
+              # ex.lw95=int95_ex[1,,1], ex.lw80=int95_ex[2,,1],  ex.up95=int95_ex[5,,1], ex.up80=int95_ex[4,,1],
+              # ex.med=int95_ex[3,,1], 
+              # gx.lw95=int95_gx[1,], gx.lw80=int95_gx[2,],  gx.up95=int95_gx[5,], gx.up80=int95_gx[4,],
+              # gx.med=int95_gx[3,],
+              # mx.lw95=int95_mx[1,,], mx.lw80=int95_mx[2,,],  mx.up95=int95_mx[5,,], mx.up80=int95_mx[4,,],
+              # mx.med=int95_mx[3,,],
+              # VarExp=variability, ax=ax, bx=bx, kt=kt,
+              # BK=BK.proj.for,BKsim=BK.proj.boot)) #BK and BKsim for the average have to be extracted and included in the CoDaCh function
 }
