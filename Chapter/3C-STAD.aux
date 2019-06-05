@@ -65,6 +65,7 @@
 \newlabel{Eq:Poisson}{{5}{5}{Data and mortality decomposition}{equation.2.5}{}}
 \newlabel{Eq:SSEcomponent}{{6}{5}{Data and mortality decomposition}{equation.2.6}{}}
 \citation{chiang1984life,camarda2016sums}
+\citation{preston2001demogr}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Observed and fitted mortality rates (in log scale) for Swiss males at selected years between 1950 and 2016. The force of mortality is decomposed into Childhood ($\bm  {\gamma }_c$), Early-adulthood ($\bm  {\gamma }_e$) and Senescent ($\bm  {\gamma }_s$) components via the two-dimensional SSE model. \relax \fontsize  {9}{11}\selectfont  \abovedisplayskip 8\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \topsep \z@ \parsep \parskip \itemsep \z@ {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textit  {Source}: as for Figure \ref  {Fig:Intro}.} \relax }}{6}{figure.caption.2}}
 \newlabel{Fig:SSEexample}{{2}{6}{Observed and fitted mortality rates (in log scale) for Swiss males at selected years between 1950 and 2016. The force of mortality is decomposed into Childhood ($\bm {\gamma }_c$), Early-adulthood ($\bm {\gamma }_e$) and Senescent ($\bm {\gamma }_s$) components via the two-dimensional SSE model.\\\footnotesize {\textit {Source}: as for Figure \ref {Fig:Intro}.} \relax }{figure.caption.2}{}}
 \citation{basellini2019stad}
@@ -75,6 +76,8 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces A graphical representation of the transformation functions (left panels) for the three components of the 3C-STAD model, and their effects on the corresponding component-specific age-at-death distributions (right panels). \relax \fontsize  {9}{11}\selectfont  \abovedisplayskip 8\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \topsep \z@ \parsep \parskip \itemsep \z@ {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textit  {Source}: authors' own elaborations.} \relax }}{8}{figure.caption.3}}
 \newlabel{Fig:STADexample}{{3}{8}{A graphical representation of the transformation functions (left panels) for the three components of the 3C-STAD model, and their effects on the corresponding component-specific age-at-death distributions (right panels).\\\footnotesize {\textit {Source}: authors' own elaborations.} \relax }{figure.caption.3}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.2}Childhood mortality}{8}{subsubsection.2.3.2}}
+\citation{thiele1871mathematical,lexis1878duree,pearson1897chances}
+\citation{heuveline2002international,remund2018young}
 \citation{ramsay2005FDA}
 \citation{basellini2019stad}
 \newlabel{Eq:STADchil}{{8}{9}{Childhood mortality}{equation.2.8}{}}
@@ -82,18 +85,24 @@
 \newlabel{Eq:STADacc}{{9}{9}{Early-adulthood mortality}{equation.2.9}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Estimating and forecasting the 3C-STAD parameters}{9}{subsection.2.4}}
 \newlabel{Subsec:STADforecast}{{2.4}{9}{Estimating and forecasting the 3C-STAD parameters}{subsection.2.4}{}}
+\citation{preston2001demogr}
+\citation{pascariu2018mortalitylaws}
 \citation{basellini2019stad}
-\citation{aitchison1986statistical,CoDa2011}
-\citation{efron1994introduction}
-\citation{bergeron2017coherent,basellini2019stad}
 \@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Summary of the 3C-STAD model by component: type of transformation of the age axis, associated parameters and choice of the standard distribution.\relax }}{10}{table.caption.4}}
 \newlabel{Table:Model}{{1}{10}{Summary of the 3C-STAD model by component: type of transformation of the age axis, associated parameters and choice of the standard distribution.\relax }{table.caption.4}{}}
 \newlabel{Eq:PoiLogLike}{{10}{10}{Estimating and forecasting the 3C-STAD parameters}{equation.2.10}{}}
-\newlabel{Eq:Masses}{{11}{10}{Estimating and forecasting the 3C-STAD parameters}{equation.2.11}{}}
+\citation{aitchison1986statistical,CoDa2011}
+\citation{efron1994introduction}
+\citation{bergeron2017coherent,basellini2019stad}
 \citation{Rcite}
-\citation{pfaff2008analysis,pfaff2008var,hyndman2008automatic,camarda2012mortalitysmooth,hyndman2018forecastR,demogRpackage}
+\citation{pfaff2008analysis,pfaff2008var,hyndman2008automatic,camarda2012mortalitysmooth,hyndman2018forecastR,demogRpackage,pascariu2018mortalitylaws}
 \citation{HMD}
 \citation{bohk2017lifespan}
+\newlabel{Eq:Masses}{{11}{11}{Estimating and forecasting the 3C-STAD parameters}{equation.2.11}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Results}{11}{section.3}}
+\newlabel{Sec:Results}{{3}{11}{Results}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Out-of-sample validation}{11}{subsection.3.1}}
+\newlabel{Subsec:OutOfSample}{{3.1}{11}{Out-of-sample validation}{subsection.3.1}{}}
 \citation{lee1992modeling}
 \citation{lee1992modeling}
 \citation{hyndman2007robust}
@@ -102,26 +111,22 @@
 \citation{hyndman2018forecastR,demogRpackage,hyndman2008automatic}
 \citation{bergeron2017coherent}
 \citation{chatfield2000time}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Results}{11}{section.3}}
-\newlabel{Sec:Results}{{3}{11}{Results}{section.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Out-of-sample validation}{11}{subsection.3.1}}
-\newlabel{Subsec:OutOfSample}{{3.1}{11}{Out-of-sample validation}{subsection.3.1}{}}
 \citation{shang2011point}
-\citation{li2013extending}
 \newlabel{Eq:MAE}{{12}{12}{Out-of-sample validation}{equation.3.12}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Forecast to 2050}{12}{subsection.3.2}}
 \newlabel{Subsec:Forecast2050}{{3.2}{12}{Forecast to 2050}{subsection.3.2}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Mean absolute error (MAE) and empirical coverage probability (ECP) for the 80\% PI of the 3C-STAD, LC, CODA and HU forecasts of $e^{0}$, $g^{0}$ and $\qopname  \relax o{ln}(m_{x,t})$ for females and males in two countries and three out-of-sample exercises: validation periods of 10 years (training period 1950-2006), 20 years (1950-1996) and 30 years (1950-1986). Lower values of the MAE (in bold) correspond to greater point forecast accuracy. Values of the ECP closer to the 80\% nominal level (in bold) correspond to greater interval forecast accuracy. \relax \fontsize  {9}{11}\selectfont  \abovedisplayskip 8\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \topsep \z@ \parsep \parskip \itemsep \z@ {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textit  {Source}: as for Figure \ref  {Fig:Intro}.}\relax }}{13}{table.caption.5}}
-\newlabel{Table:Validation}{{2}{13}{Mean absolute error (MAE) and empirical coverage probability (ECP) for the 80\% PI of the 3C-STAD, LC, CODA and HU forecasts of $e^{0}$, $g^{0}$ and $\ln (m_{x,t})$ for females and males in two countries and three out-of-sample exercises: validation periods of 10 years (training period 1950-2006), 20 years (1950-1996) and 30 years (1950-1986). Lower values of the MAE (in bold) correspond to greater point forecast accuracy. Values of the ECP closer to the 80\% nominal level (in bold) correspond to greater interval forecast accuracy.\\\footnotesize {\textit {Source}: as for Figure \ref {Fig:Intro}.}\relax }{table.caption.5}{}}
+\citation{li2013extending}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Mean absolute error (MAE) and empirical coverage probability (ECP) for the 80\% PI of the 3C-STAD, LC, CODA and HU forecasts of $e^{0}$, $g^{0}$ and $\qopname  \relax o{ln}(m_{x,t})$ for females and males in two countries and three out-of-sample exercises: validation periods of 10 years (training period 1950-2006), 20 years (1950-1996) and 30 years (1950-1986). Lower values of the MAE (in bold) correspond to greater point forecast accuracy. Values of the ECP closer to the 80\% nominal level (in bold) correspond to greater interval forecast accuracy. \relax \fontsize  {9}{11}\selectfont  \abovedisplayskip 8\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \topsep \z@ \parsep \parskip \itemsep \z@ {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textit  {Source}: as for Figure \ref  {Fig:Intro}.}\relax }}{14}{table.caption.5}}
+\newlabel{Table:Validation}{{2}{14}{Mean absolute error (MAE) and empirical coverage probability (ECP) for the 80\% PI of the 3C-STAD, LC, CODA and HU forecasts of $e^{0}$, $g^{0}$ and $\ln (m_{x,t})$ for females and males in two countries and three out-of-sample exercises: validation periods of 10 years (training period 1950-2006), 20 years (1950-1996) and 30 years (1950-1986). Lower values of the MAE (in bold) correspond to greater point forecast accuracy. Values of the ECP closer to the 80\% nominal level (in bold) correspond to greater interval forecast accuracy.\\\footnotesize {\textit {Source}: as for Figure \ref {Fig:Intro}.}\relax }{table.caption.5}{}}
 \citation{thiele1871mathematical}
 \citation{thiele1871mathematical}
 \citation{lexis1878duree}
 \citation{pearson1897chances}
 \citation{siler1979competing,heligman1980age,kostaki1992nine,de2016new,mazzuco2018mortality}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Observed and forecast life expectancy at birth ($e^{0}$, top panels) and Gini coefficient ($g^{0}$, bottom panels) females and males in Sweden and Switzerland, 1950-2050.  \relax \fontsize  {9}{11}\selectfont  \abovedisplayskip 8\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \topsep \z@ \parsep \parskip \itemsep \z@ {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textit  {Source}: as for Figure \ref  {Fig:Intro}.} \relax }}{14}{figure.caption.6}}
-\newlabel{Fig:e0g0fore}{{4}{14}{Observed and forecast life expectancy at birth ($e^{0}$, top panels) and Gini coefficient ($g^{0}$, bottom panels) females and males in Sweden and Switzerland, 1950-2050. \\\footnotesize {\textit {Source}: as for Figure \ref {Fig:Intro}.} \relax }{figure.caption.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion}{14}{section.4}}
-\newlabel{Sec:Discussion}{{4}{14}{Discussion}{section.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Observed and forecast life expectancy at birth ($e^{0}$, top panels) and Gini coefficient ($g^{0}$, bottom panels) females and males in Sweden and Switzerland, 1950-2050.  \relax \fontsize  {9}{11}\selectfont  \abovedisplayskip 8\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \topsep \z@ \parsep \parskip \itemsep \z@ {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textit  {Source}: as for Figure \ref  {Fig:Intro}.} \relax }}{15}{figure.caption.6}}
+\newlabel{Fig:e0g0fore}{{4}{15}{Observed and forecast life expectancy at birth ($e^{0}$, top panels) and Gini coefficient ($g^{0}$, bottom panels) females and males in Sweden and Switzerland, 1950-2050. \\\footnotesize {\textit {Source}: as for Figure \ref {Fig:Intro}.} \relax }{figure.caption.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion}{15}{section.4}}
+\newlabel{Sec:Discussion}{{4}{15}{Discussion}{section.4}{}}
 \citation{camarda2016sums}
 \citation{basellini2019stad}
 \citation{HMD}
@@ -130,11 +135,11 @@
 \citation{oeppen2008coherent}
 \citation{hyndman2007robust}
 \citation{hyndman2007robust}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Observed age-specific mortality rates in 1950--2016 (grey lines) and forecast rates of four models in 2050 for females and males in Sweden and Switzerland. Shaded areas correspond to 80\% PI for the 3C-STAD model.  \relax \fontsize  {9}{11}\selectfont  \abovedisplayskip 8\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \topsep \z@ \parsep \parskip \itemsep \z@ {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textit  {Source}: as for Figure \ref  {Fig:Intro}.} \relax }}{15}{figure.caption.7}}
-\newlabel{Fig:LMXfore}{{5}{15}{Observed age-specific mortality rates in 1950--2016 (grey lines) and forecast rates of four models in 2050 for females and males in Sweden and Switzerland. Shaded areas correspond to 80\% PI for the 3C-STAD model. \\\footnotesize {\textit {Source}: as for Figure \ref {Fig:Intro}.} \relax }{figure.caption.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Observed age-specific mortality rates in 1950--2016 (grey lines) and forecast rates of four models in 2050 for females and males in Sweden and Switzerland. Shaded areas correspond to 80\% PI for the 3C-STAD model.  \relax \fontsize  {9}{11}\selectfont  \abovedisplayskip 8\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \topsep \z@ \parsep \parskip \itemsep \z@ {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textit  {Source}: as for Figure \ref  {Fig:Intro}.} \relax }}{16}{figure.caption.7}}
+\newlabel{Fig:LMXfore}{{5}{16}{Observed age-specific mortality rates in 1950--2016 (grey lines) and forecast rates of four models in 2050 for females and males in Sweden and Switzerland. Shaded areas correspond to 80\% PI for the 3C-STAD model. \\\footnotesize {\textit {Source}: as for Figure \ref {Fig:Intro}.} \relax }{figure.caption.7}{}}
 \citation{bergeron2017coherent}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Observed age-at-death distribution in 2016 (grey points) and forecasts of four models in 2050 for females and males in Sweden and Switzerland.  \relax \fontsize  {9}{11}\selectfont  \abovedisplayskip 8\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \topsep \z@ \parsep \parskip \itemsep \z@ {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textit  {Source}: as for Figure \ref  {Fig:Intro}.} \relax }}{16}{figure.caption.8}}
-\newlabel{Fig:DXfore}{{6}{16}{Observed age-at-death distribution in 2016 (grey points) and forecasts of four models in 2050 for females and males in Sweden and Switzerland. \\\footnotesize {\textit {Source}: as for Figure \ref {Fig:Intro}.} \relax }{figure.caption.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Observed age-at-death distribution in 2016 (grey points) and forecasts of four models in 2050 for females and males in Sweden and Switzerland.  \relax \fontsize  {9}{11}\selectfont  \abovedisplayskip 8\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \topsep \z@ \parsep \parskip \itemsep \z@ {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textit  {Source}: as for Figure \ref  {Fig:Intro}.} \relax }}{17}{figure.caption.8}}
+\newlabel{Fig:DXfore}{{6}{17}{Observed age-at-death distribution in 2016 (grey points) and forecasts of four models in 2050 for females and males in Sweden and Switzerland. \\\footnotesize {\textit {Source}: as for Figure \ref {Fig:Intro}.} \relax }{figure.caption.8}{}}
 \citation{bergeron2017what}
 \citation{lee2001evaluating}
 \citation{li2013extending}
@@ -169,45 +174,48 @@
 \bibcite{gage1993decline}{{23}{1993}{{Gage}}{{}}}
 \bibcite{haberman2011comparative}{{24}{2011}{{Haberman and Renshaw}}{{}}}
 \bibcite{heligman1980age}{{25}{1980}{{Heligman and Pollard}}{{}}}
-\bibcite{horiuchi2013modal}{{26}{2013}{{Horiuchi et~al.}}{{}}}
-\bibcite{HMD}{{27}{2019}{{Human Mortality Database}}{{}}}
-\bibcite{hyndman2018forecastR}{{28}{2018a}{{Hyndman et~al.}}{{}}}
-\bibcite{hyndman2008automatic}{{29}{2008}{{Hyndman and Khandakar}}{{}}}
-\bibcite{demogRpackage}{{30}{2018b}{{Hyndman et~al.}}{{}}}
-\bibcite{hyndman2013coherent}{{31}{2013}{{Hyndman et~al.}}{{}}}
-\bibcite{hyndman2007robust}{{32}{2007}{{Hyndman and Ullah}}{{}}}
-\bibcite{janssen2019timing}{{33}{2019}{{Janssen and de~Beer}}{{}}}
-\bibcite{janssen2013smoking}{{34}{2013}{{Janssen et~al.}}{{}}}
-\bibcite{kannisto2000measuring}{{35}{2000}{{Kannisto}}{{}}}
-\bibcite{kannisto2001mode}{{36}{2001}{{Kannisto}}{{}}}
-\bibcite{klein2005survival}{{37}{2005}{{Klein and Moeschberger}}{{}}}
-\bibcite{kostaki1992nine}{{38}{1992}{{Kostaki}}{{}}}
-\bibcite{lee2001evaluating}{{39}{2001}{{Lee and Miller}}{{}}}
-\bibcite{lee1992modeling}{{40}{1992}{{Lee and Carter}}{{}}}
-\bibcite{lexis1878duree}{{41}{1878}{{Lexis}}{{}}}
-\bibcite{li2005coherent}{{42}{2005}{{Li and Lee}}{{}}}
-\bibcite{li2013extending}{{43}{2013}{{Li et~al.}}{{}}}
-\bibcite{lotka1939theorie}{{44}{1939}{{Lotka}}{{}}}
-\bibcite{mazzuco2018mortality}{{45}{2018}{{Mazzuco et~al.}}{{}}}
-\bibcite{oeppen2008coherent}{{46}{2008}{{Oeppen}}{{}}}
-\bibcite{oeppen2013coherent}{{47}{2013}{{Oeppen and Camarda}}{{}}}
-\bibcite{pascariu2019maximum}{{48}{2019}{{Pascariu et~al.}}{{}}}
-\bibcite{CoDa2011}{{49}{2011}{{Pawlowsky-Glahn and Buccianti}}{{}}}
-\bibcite{pearson1897chances}{{50}{1897}{{Pearson}}{{}}}
-\bibcite{pfaff2008analysis}{{51}{2008a}{{Pfaff}}{{}}}
-\bibcite{pfaff2008var}{{52}{2008b}{{Pfaff}}{{}}}
-\bibcite{pollard1987projection}{{53}{1987}{{Pollard}}{{}}}
-\bibcite{Rcite}{{54}{2018}{{R Development Core Team}}{{}}}
-\bibcite{ramsay2005FDA}{{55}{2005}{{Ramsay and Silverman}}{{}}}
-\bibcite{remund2018young}{{56}{2018}{{Remund et~al.}}{{}}}
-\bibcite{seligman2016convergence}{{57}{2016}{{Seligman et~al.}}{{}}}
-\bibcite{shang2011point}{{58}{2011}{{Shang et~al.}}{{}}}
-\bibcite{siler1979competing}{{59}{1979}{{Siler}}{{}}}
-\bibcite{stoeldraijer2013impact}{{60}{2013}{{Stoeldraijer et~al.}}{{}}}
-\bibcite{thiele1871mathematical}{{61}{1871}{{Thiele}}{{}}}
-\bibcite{thompson1981composite}{{62}{1981}{{Thompson and Baker}}{{}}}
-\bibcite{vaupel1994longer}{{63}{1994}{{Vaupel and Lundstr{\"o}m}}{{}}}
-\bibcite{whelpton1928population}{{64}{1928}{{Whelpton}}{{}}}
-\bibcite{whelpton1936empirical}{{65}{1936}{{Whelpton}}{{}}}
-\bibcite{wilmoth1999rectangularization}{{66}{1999}{{Wilmoth and Horiuchi}}{{}}}
-\bibcite{wilmoth1996extreme}{{67}{1996}{{Wilmoth and Lundstr{\"o}m}}{{}}}
+\bibcite{heuveline2002international}{{26}{2002}{{Heuveline}}{{}}}
+\bibcite{horiuchi2013modal}{{27}{2013}{{Horiuchi et~al.}}{{}}}
+\bibcite{HMD}{{28}{2019}{{Human Mortality Database}}{{}}}
+\bibcite{hyndman2018forecastR}{{29}{2018a}{{Hyndman et~al.}}{{}}}
+\bibcite{hyndman2008automatic}{{30}{2008}{{Hyndman and Khandakar}}{{}}}
+\bibcite{demogRpackage}{{31}{2018b}{{Hyndman et~al.}}{{}}}
+\bibcite{hyndman2013coherent}{{32}{2013}{{Hyndman et~al.}}{{}}}
+\bibcite{hyndman2007robust}{{33}{2007}{{Hyndman and Ullah}}{{}}}
+\bibcite{janssen2019timing}{{34}{2019}{{Janssen and de~Beer}}{{}}}
+\bibcite{janssen2013smoking}{{35}{2013}{{Janssen et~al.}}{{}}}
+\bibcite{kannisto2000measuring}{{36}{2000}{{Kannisto}}{{}}}
+\bibcite{kannisto2001mode}{{37}{2001}{{Kannisto}}{{}}}
+\bibcite{klein2005survival}{{38}{2005}{{Klein and Moeschberger}}{{}}}
+\bibcite{kostaki1992nine}{{39}{1992}{{Kostaki}}{{}}}
+\bibcite{lee2001evaluating}{{40}{2001}{{Lee and Miller}}{{}}}
+\bibcite{lee1992modeling}{{41}{1992}{{Lee and Carter}}{{}}}
+\bibcite{lexis1878duree}{{42}{1878}{{Lexis}}{{}}}
+\bibcite{li2005coherent}{{43}{2005}{{Li and Lee}}{{}}}
+\bibcite{li2013extending}{{44}{2013}{{Li et~al.}}{{}}}
+\bibcite{lotka1939theorie}{{45}{1939}{{Lotka}}{{}}}
+\bibcite{mazzuco2018mortality}{{46}{2018}{{Mazzuco et~al.}}{{}}}
+\bibcite{oeppen2008coherent}{{47}{2008}{{Oeppen}}{{}}}
+\bibcite{oeppen2013coherent}{{48}{2013}{{Oeppen and Camarda}}{{}}}
+\bibcite{pascariu2018mortalitylaws}{{49}{2018}{{Pascariu}}{{}}}
+\bibcite{pascariu2019maximum}{{50}{2019}{{Pascariu et~al.}}{{}}}
+\bibcite{CoDa2011}{{51}{2011}{{Pawlowsky-Glahn and Buccianti}}{{}}}
+\bibcite{pearson1897chances}{{52}{1897}{{Pearson}}{{}}}
+\bibcite{pfaff2008analysis}{{53}{2008a}{{Pfaff}}{{}}}
+\bibcite{pfaff2008var}{{54}{2008b}{{Pfaff}}{{}}}
+\bibcite{pollard1987projection}{{55}{1987}{{Pollard}}{{}}}
+\bibcite{preston2001demogr}{{56}{2001}{{Preston et~al.}}{{}}}
+\bibcite{Rcite}{{57}{2018}{{R Development Core Team}}{{}}}
+\bibcite{ramsay2005FDA}{{58}{2005}{{Ramsay and Silverman}}{{}}}
+\bibcite{remund2018young}{{59}{2018}{{Remund et~al.}}{{}}}
+\bibcite{seligman2016convergence}{{60}{2016}{{Seligman et~al.}}{{}}}
+\bibcite{shang2011point}{{61}{2011}{{Shang et~al.}}{{}}}
+\bibcite{siler1979competing}{{62}{1979}{{Siler}}{{}}}
+\bibcite{stoeldraijer2013impact}{{63}{2013}{{Stoeldraijer et~al.}}{{}}}
+\bibcite{thiele1871mathematical}{{64}{1871}{{Thiele}}{{}}}
+\bibcite{thompson1981composite}{{65}{1981}{{Thompson and Baker}}{{}}}
+\bibcite{vaupel1994longer}{{66}{1994}{{Vaupel and Lundstr{\"o}m}}{{}}}
+\bibcite{whelpton1928population}{{67}{1928}{{Whelpton}}{{}}}
+\bibcite{whelpton1936empirical}{{68}{1936}{{Whelpton}}{{}}}
+\bibcite{wilmoth1999rectangularization}{{69}{1999}{{Wilmoth and Horiuchi}}{{}}}
+\bibcite{wilmoth1996extreme}{{70}{1996}{{Wilmoth and Lundstr{\"o}m}}{{}}}

@@ -138,6 +138,13 @@ Heligman, L. and Pollard, J.~H. (1980).
 \newblock The age pattern of mortality.
 \newblock {\em Journal of the Institute of Actuaries}, 107(01):49--80.
 
+\bibitem[Heuveline, 2002]{heuveline2002international}
+Heuveline, P. (2002).
+\newblock {An International Comparison of Adolescent and Young Adult
+  Mortality}.
+\newblock {\em The {ANNALS} of the American Academy of Political and Social
+  Science}, 580(1):172--200.
+
 \bibitem[Horiuchi et~al., 2013]{horiuchi2013modal}
 Horiuchi, S., Ouellette, N., Cheung, S. L.~K., and Robine, J.-M. (2013).
 \newblock Modal age at death: lifespan indicator in the era of longevity
@@ -270,6 +277,12 @@ Oeppen, J. and Camarda, C.~G. (2013).
 \newblock In {\em Joint Eurostat/UNECE Work Session on Demographic
   Projections}.
 
+\bibitem[Pascariu, 2018]{pascariu2018mortalitylaws}
+Pascariu, M.~D. (2018).
+\newblock {\em MortalityLaws: Parametric Mortality Models, Life Tables and
+  HMD}.
+\newblock R package version 1.7.0.
+
 \bibitem[Pascariu et~al., 2019]{pascariu2019maximum}
 Pascariu, M.~D., Lenart, A., and Canudas-Romo, V. (2019).
 \newblock The maximum entropy mortality model: forecasting mortality using
@@ -300,6 +313,11 @@ Pfaff, B. (2008b).
 Pollard, J.~H. (1987).
 \newblock Projection of age-specific mortality rates.
 \newblock {\em Population Bulletin of the United Nations}, 21-22:55--69.
+
+\bibitem[Preston et~al., 2001]{preston2001demogr}
+Preston, S.~H., Heuveline, P., and Guillot, M. (2001).
+\newblock {\em Demography. Measuring and Modeling Population Processes}.
+\newblock Blackwell.
 
 \bibitem[{R Development Core Team}, 2018]{Rcite}
 {R Development Core Team} (2018).
