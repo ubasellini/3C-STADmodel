@@ -5,45 +5,45 @@ The style file: apalike.bst
 Database file #1: Biblio.bib
 Warning--there's a number but no volume in lotka1939theorie
 Warning--can't use both author and editor fields in pearson1897chances
-You've used 70 entries,
+You've used 73 entries,
             1935 wiz_defined-function locations,
-            882 strings with 15453 characters,
-and the built_in function-call counts, 26501 in all, are:
-= -- 2640
-> -- 918
-< -- 54
-+ -- 325
-- -- 294
-* -- 2254
-:= -- 4595
-add.period$ -- 212
-call.type$ -- 70
-change.case$ -- 485
-chr.to.int$ -- 67
-cite$ -- 72
-duplicate$ -- 1008
-empty$ -- 1956
-format.name$ -- 408
-if$ -- 5147
+            899 strings with 15993 characters,
+and the built_in function-call counts, 27751 in all, are:
+= -- 2767
+> -- 967
+< -- 56
++ -- 341
+- -- 310
+* -- 2371
+:= -- 4809
+add.period$ -- 221
+call.type$ -- 73
+change.case$ -- 508
+chr.to.int$ -- 70
+cite$ -- 75
+duplicate$ -- 1050
+empty$ -- 2044
+format.name$ -- 431
+if$ -- 5388
 int.to.chr$ -- 4
 int.to.str$ -- 0
-missing$ -- 74
-newline$ -- 354
-num.names$ -- 211
-pop$ -- 391
+missing$ -- 77
+newline$ -- 369
+num.names$ -- 220
+pop$ -- 406
 preamble$ -- 1
-purify$ -- 497
+purify$ -- 520
 quote$ -- 0
-skip$ -- 756
+skip$ -- 788
 stack$ -- 0
-substring$ -- 2068
-swap$ -- 96
+substring$ -- 2173
+swap$ -- 99
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 400
+type$ -- 418
 warning$ -- 2
-while$ -- 237
+while$ -- 249
 width$ -- 0
-write$ -- 901
+write$ -- 940
 (There were 2 warnings)

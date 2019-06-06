@@ -77,15 +77,32 @@ ForecastAccuracyIndic <- function(ages,MXact,MXforeMEAN,MXforeLOW,MXforeUP,
 
 ## functions to compute the Dawid-Sebastiani score
 DSSfun <- function(y,BOOT){
-  MU_boot <- apply(BOOT,1,mean)
-  SD_boot <- apply(BOOT,1,sd)
+  MU_boot <- apply(BOOT,1,mean,na.rm=T)
+  SD_boot <- apply(BOOT,1,sd,na.rm=T)
   DSS <- (y-MU_boot)^2/(SD_boot^2) + 2*SD_boot
   return(mean(DSS))
 }
 
 DSSmatFun <- function(Y,BOOT){
-  MU_boot <- apply(BOOT,c(1,2),mean)
-  SD_boot <- apply(BOOT,c(1,2),sd)
+  MU_boot <- apply(BOOT,c(1,2),mean,na.rm=T)
+  SD_boot <- apply(BOOT,c(1,2),sd,na.rm=T)
+  if (any(SD_boot==0)){
+    Y <- Y[-nrow(Y),]
+    BOOT <- BOOT[-nrow(BOOT),,]
+    MU_boot <- apply(BOOT,c(1,2),mean,na.rm=T)
+    SD_boot <- apply(BOOT,c(1,2),sd,na.rm=T)
+  }
   DSS <- (Y-MU_boot)^2/(SD_boot^2) + 2*SD_boot
+  for (i in 1:10){
+    if (any(DSS > 1e5, na.rm = T)){
+      Y <- Y[-nrow(Y),]
+      BOOT <- BOOT[-nrow(BOOT),,]
+      MU_boot <- apply(BOOT,c(1,2),mean,na.rm=T)
+      SD_boot <- apply(BOOT,c(1,2),sd,na.rm=T)
+      DSS <- (Y-MU_boot)^2/(SD_boot^2) + 2*SD_boot
+    }else{
+      break
+    }
+  }
   return(mean(DSS,na.rm = T))
 }

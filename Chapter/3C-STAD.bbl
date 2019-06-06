@@ -95,6 +95,11 @@ Csete, J. and Grob, P.~J. (2012).
   policy development.
 \newblock {\em International Journal of Drug Policy}, 23(1):82--86.
 
+\bibitem[Dawid and Sebastiani, 1999]{dawid1999coherent}
+Dawid, A.~P. and Sebastiani, P. (1999).
+\newblock Coherent dispersion criteria for optimal experimental design.
+\newblock {\em The Annals of Statistics}, 27(1):65--81.
+
 \bibitem[de~Beer and Janssen, 2016]{de2016new}
 de~Beer, J. and Janssen, F. (2016).
 \newblock A new parametric model to assess delay and compression of mortality.
@@ -127,6 +132,11 @@ Gage, T.~B. (1993).
 \newblock {The Decline of Mortality in England and Wales 1861 to 1964:
   Decomposition by Cause of Death and Component of Mortality}.
 \newblock {\em Population Studies}, 47(1):47--66.
+
+\bibitem[Gneiting and Katzfuss, 2014]{gneiting2014probabilistic}
+Gneiting, T. and Katzfuss, M. (2014).
+\newblock Probabilistic forecasting.
+\newblock {\em Annual Review of Statistics and Its Application}, 1(1):125--151.
 
 \bibitem[Haberman and Renshaw, 2011]{haberman2011comparative}
 Haberman, S. and Renshaw, A. (2011).
@@ -324,6 +334,13 @@ Preston, S.~H., Heuveline, P., and Guillot, M. (2001).
 \newblock {\em {R}: {A} {L}anguage and {E}nvironment for {S}tatistical
   {C}omputing}.
 \newblock R Foundation for Statistical Computing, Vienna, Austria.
+
+\bibitem[Raftery et~al., 2013]{raftery2013bayesian}
+Raftery, A.~E., Chunn, J.~L., Gerland, P., and {\v{S}}ev{\v{c}}{\'i}kov{\'a},
+  H. (2013).
+\newblock Bayesian probabilistic projections of life expectancy for all
+  countries.
+\newblock {\em Demography}, 50(3):777--801.
 
 \bibitem[Ramsay and Silverman, 2005]{ramsay2005FDA}
 Ramsay, J.~O. and Silverman, B.~W. (2005).

@@ -24,8 +24,8 @@ if (BT==10){
 }
 
 ## select Population of interest
-cou <- "SWE"      ## "CHE" or "SWE"
-sex <- "Females"    ## "Females" or "Males"
+cou <- "CHE"      ## "CHE" or "SWE"
+sex <- "Males"    ## "Females" or "Males"
 
 ## load STAD data
 name <- paste(cou,sex,"3C-STAD.Rdata",sep="_")
@@ -184,7 +184,7 @@ DSS_g0_LC <- round(DSSfun(100*g0_BT,100*G0BOOT_LC),2)
 DSS_g0_CODA <- round(DSSfun(100*g0_BT,100*G0BOOT_CODA),2)
 DSS_g0_HU <- round(DSSfun(100*g0_BT,100*G0BOOT_HU),2)
 DSS_mx_STAD <- round(DSSmatFun(MX_BT,exp(LMXBOOT_STAD)),2)
-DSS_mx_LC <- round(DSSmatFun(MX_BT,exp(LMXBOOT_LC)),2)
+DSS_mx_LC <- round(DSSmatFun(MX_BT[1:nrow(LMXBOOT_LC),],exp(LMXBOOT_LC)),2)
 DSS_mx_CODA <- round(DSSmatFun(MX_BT,exp(LMXBOOT_CODA)),2)
 DSS_mx_HU <- round(DSSmatFun(MX_BT,exp(LMXBOOT_HU)),2)
 
