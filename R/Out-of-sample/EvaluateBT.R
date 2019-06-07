@@ -25,7 +25,7 @@ if (BT==10){
 
 ## select Population of interest
 cou <- "CHE"      ## "CHE" or "SWE"
-sex <- "Males"    ## "Females" or "Males"
+sex <- "Females"    ## "Females" or "Males"
 
 ## load STAD data
 name <- paste(cou,sex,"3C-STAD.Rdata",sep="_")

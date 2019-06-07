@@ -642,6 +642,7 @@ FitFore_STAD3C <- function(ages,years,E,Z,sex="Males",
     j <- 1
     k <- 1
     for (k in 1:n.simul){
+      cat("bootstrap",k,"\n")
       for(j in 1:n.fore) {
         ## CHILDHOOD
         ## get values of bsUP for each forecasted year

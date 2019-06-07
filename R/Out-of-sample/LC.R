@@ -26,7 +26,7 @@ source("LifeTableFUN.R")
 ## load starting data
 Data <- "~/Documents/Demography/Work/STADall/Github/3C-STADmodel/R/Data"
 setwd(Data)
-cou <- "SWE"      ## "SWE "or "CHE"
+cou <- "CHE"      ## "SWE "or "CHE"
 sex <- "Females"  ## "Females" or "Males"
 name <- paste(cou,"_HMD.Rdata",sep="")
 load(name)
@@ -49,7 +49,7 @@ if (sex=="Males"){
   LHAZact <- log(Z/E)
 }
 ## select out-of-sample scenario
-BT <- 30
+BT <- 10
 years.fit <- 1950:(years[n]-BT)
 n.fit <- length(years.fit)
 years.fore <- (years.fit[n.fit]+1):2016
@@ -61,7 +61,7 @@ E.fore <- E[,years%in%years.fore]
 Z.fore <- Z[,years%in%years.fore]
 LHAZact.fore <- log(Z.fore/E.fore)
 LC_FitData <- extract.years(FittingData,years.fit)
-lc.boot <- 100      ## increase for smoother PI
+lc.boot <- 1000      ## increase for smoother PI
 
 ##-- ORIGINAL LEE-CARTER -------
 if (sex=="Males"){

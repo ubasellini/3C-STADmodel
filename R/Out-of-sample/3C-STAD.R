@@ -30,13 +30,13 @@ source("FitSTAD3C.R")
 ## load starting data: observed and SSE fit 
 Data <- "~/Documents/Demography/Work/STADall/Github/3C-STADmodel/R/Data"
 setwd(Data)
-cou <- "SWE"        ## "SWE "or "CHE"
+cou <- "CHE"        ## "SWE "or "CHE"
 sex <- "Females"    ## "Females" or "Males"
 name <- paste(cou,sex,"SSEfit.Rdata",sep="_")
 load(name)
 
 ## select out-of-sample scenario
-BT <- 30
+BT <- 10
 years.fit <- 1950:(years[n]-BT)
 n.fit <- length(years.fit)
 years.fore <- (years.fit[n.fit]+1):2016
@@ -47,7 +47,7 @@ LHAZact.fit <- log(Z.fit/E.fit)
 E.fore <- E[,years%in%years.fore]
 Z.fore <- Z[,years%in%years.fore]
 LHAZact.fore <- log(Z.fore/E.fore)
-stad.boot <- 100      ## increase for smoother PI
+stad.boot <- 1000      ## increase for smoother PI
 
 ## FIT AND FORE STAD
 set.seed(2019)

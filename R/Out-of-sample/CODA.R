@@ -18,7 +18,7 @@ source("CoDaFUN.R")
 ## load starting data
 Data <- "~/Documents/Demography/Work/STADall/Github/3C-STADmodel/R/Data"
 setwd(Data)
-cou <- "SWE"      ## "SWE "or "CHE"
+cou <- "CHE"      ## "SWE "or "CHE"
 sex <- "Females"  ## "Females" or "Males"
 name <- paste(cou,"_HMD.Rdata",sep="")
 load(name)
@@ -60,9 +60,9 @@ radix<-1
 
 # Number of simulation used for the prediction intervals (PI)
 # For the uncertainty in estimating the parameters
-n.error <- 10
+n.error <- 32
 # For the uncertainty in the extrapolated values of the time index
-n.kt <- 10
+n.kt <- 32
 
 #Percentile used for the PI
 prob<-c(0.025, 0.1, 0.5, 0.9, 0.975)

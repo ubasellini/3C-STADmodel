@@ -50,7 +50,7 @@ if (sex=="Males"){
   LHAZact <- log(Z/E)
 }
 ## select out-of-sample scenario
-BT <- 30
+BT <- 10
 years.fit <- 1950:(years[n]-BT)
 n.fit <- length(years.fit)
 years.fore <- (years.fit[n.fit]+1):2016
@@ -62,7 +62,7 @@ E.fore <- E[,years%in%years.fore]
 Z.fore <- Z[,years%in%years.fore]
 LHAZact.fore <- log(Z.fore/E.fore)
 FDM_FitData <- extract.years(FittingData,years.fit)
-n.boot <- 100      ## increase for smoother PI
+n.boot <- 1000      ## increase for smoother PI
 
 ##-- Functional demographic model (Hyndman & Ullah 2007) -------
 smus <- smooth.demogdata(FDM_FitData)
