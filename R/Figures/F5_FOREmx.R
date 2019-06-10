@@ -343,7 +343,7 @@ cex.x.axis <- 1.25
 cex.y.axis <- 1.1
 cex.leg <- 1.3
 
-setwd("~/Documents/Demography/Work/STADall/Github/3C-STADmodel/Manuscript/Figures")
+setwd("~/Documents/Demography/Work/STADall/Github/3C-STADmodel/Chapter/Figures")
 pdf("F5.pdf",width = 10, height = 8)
 op <- par(mfrow = c(2,2),
           oma = c(2,2,0,0) + 0.1,
