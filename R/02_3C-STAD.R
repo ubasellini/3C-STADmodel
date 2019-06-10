@@ -29,7 +29,7 @@ source("FitSTAD3C.R")
 ## load starting data: observed and SSE fit 
 Data <- "~/Documents/Demography/Work/STADall/Github/3C-STADmodel/R/Data"
 setwd(Data)
-cou <- "SWE"      ## "SWE "or "CHE"
+cou <- "CHE"      ## "SWE "or "CHE"
 sex <- "Males"    ## "Females" or "Males"
 name <- paste(cou,sex,"SSEfit.Rdata",sep="_")
 load(name)
@@ -38,7 +38,7 @@ load(name)
 set.seed(2019)
 years.fore <- (years[n]+1):2050
 n.fore <- length(years.fore)
-stad.boot <- 250      ## increase for smoother PI
+stad.boot <- 1000      ## increase for smoother PI
 
 ## FIT AND FORE STAD
 STAD <- FitFore_STAD3C(ages=ages,years=years,E=E,Z=Z,
