@@ -6,7 +6,6 @@ Mortality forecasting has recently received growing interest as accurate project
 
 
 ## Reference
-Basellini U., and Camarda C.G. A Three-component Approach to Model and Forecast Age-at-death Distributions. Chapter submitted for the Springer book _New 
-Perspectives on Population Forecasting_ (eds. S. Mazzuco and N. Keilman)
+Basellini U., and Camarda C.G. (2019). A Three-component Approach to Model and Forecast Age-at-death Distributions. In Keilman, N., and Mazzuco, S. (eds.), _New Perspectives on Population Forecasting_ , Springer. Forthcoming.
 
 
