@@ -8,16 +8,17 @@ Aitchison, J. (1986).
 \bibitem[Bardoutsos et~al., 2018]{bardoutsos2018projecting}
 Bardoutsos, A., de~Beer, J., and Janssen, F. (2018).
 \newblock Projecting delay and compression of mortality.
-\newblock {\em Genus}, 74(1).
+\newblock {\em Genus}, 74.
+\newblock Article number: 17.
 
 \bibitem[Basellini and Camarda, 2019]{basellini2019stad}
 Basellini, U. and Camarda, C.~G. (2019).
 \newblock Modelling and forecasting adult age-at-death distributions.
 \newblock {\em Population Studies}, 73(1):119--138.
 
-\bibitem[Bergeron-Boucher et~al., 2017a]{bergeron2017coherent}
+\bibitem[Bergeron-Boucher et~al., 2017]{bergeron2017coherent}
 Bergeron-Boucher, M.-P., Canudas-Romo, V., Oeppen, J., and Vaupel, J.~W.
-  (2017a).
+  (2017).
 \newblock Coherent forecasts of mortality with compositional data analysis.
 \newblock {\em Demographic Research}, 37(17):527--566.
 
@@ -27,11 +28,12 @@ Bergeron-Boucher, M.-P., Ebeling, M., and Canudas-Romo, V. (2015).
   mortality.
 \newblock {\em Demographic Research}, 33(14):391--424.
 
-\bibitem[Bergeron-Boucher et~al., 2017b]{bergeron2017what}
-Bergeron-Boucher, M.-P., Kj{\ae}rgaard, S., and Oeppen, J. (2017b).
-\newblock What to forecast? {A}n exploratory study of the implication of using
-  different indicators to forecast mortality.
-\newblock In {\em XXVIII International Population Conference}.
+\bibitem[Bergeron-Boucher et~al., 2019]{bergeron2019impact}
+Bergeron-Boucher, M.-P., Kj{\ae}rgaard, S., Oeppen, J., and Vaupel, J.~W.
+  (2019).
+\newblock The impact of the choice of life table statistics when forecasting
+  mortality.
+\newblock {\em Demographic Research}, 41:1235--1268.
 
 \bibitem[Bohk-Ewald et~al., 2017]{bohk2017lifespan}
 Bohk-Ewald, C., Ebeling, M., and Rau, R. (2017).
@@ -86,7 +88,7 @@ Chatfield, C. (2000).
 
 \bibitem[Chiang, 1984]{chiang1984life}
 Chiang, C.~L. (1984).
-\newblock {\em {The Life Table and its Application}}.
+\newblock {\em {The Life Table and its Applications}}.
 \newblock Malabar, FL: Krieger.
 
 \bibitem[Csete and Grob, 2012]{csete2012switzerland}
@@ -103,7 +105,8 @@ Dawid, A.~P. and Sebastiani, P. (1999).
 \bibitem[de~Beer and Janssen, 2016]{de2016new}
 de~Beer, J. and Janssen, F. (2016).
 \newblock A new parametric model to assess delay and compression of mortality.
-\newblock {\em Population Health Metrics}, 14(1):46.
+\newblock {\em Population Health Metrics}, 14.
+\newblock Article number: 46.
 
 \bibitem[Efron and Tibshirani, 1994]{efron1994introduction}
 Efron, B. and Tibshirani, R.~J. (1994).
@@ -203,7 +206,8 @@ Hyndman, R.~J. and Ullah, M.~S. (2007).
 Janssen, F. and de~Beer, J. (2019).
 \newblock {The timing of the transition from mortality compression to mortality
   delay in Europe, Japan and the United States}.
-\newblock {\em Genus}, 75(1).
+\newblock {\em Genus}, 75.
+\newblock Article number: 10.
 
 \bibitem[Janssen et~al., 2013]{janssen2013smoking}
 Janssen, F., van Wissen, L. J.~G., and Kunst, A.~E. (2013).

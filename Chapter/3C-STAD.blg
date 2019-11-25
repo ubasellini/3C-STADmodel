@@ -7,43 +7,43 @@ Warning--there's a number but no volume in lotka1939theorie
 Warning--can't use both author and editor fields in pearson1897chances
 You've used 73 entries,
             1935 wiz_defined-function locations,
-            900 strings with 15997 characters,
-and the built_in function-call counts, 27751 in all, are:
-= -- 2767
-> -- 967
+            903 strings with 16006 characters,
+and the built_in function-call counts, 27846 in all, are:
+= -- 2785
+> -- 972
 < -- 56
-+ -- 341
-- -- 310
-* -- 2371
-:= -- 4809
-add.period$ -- 221
++ -- 344
+- -- 312
+* -- 2374
+:= -- 4829
+add.period$ -- 224
 call.type$ -- 73
-change.case$ -- 508
-chr.to.int$ -- 70
+change.case$ -- 509
+chr.to.int$ -- 71
 cite$ -- 75
-duplicate$ -- 1050
-empty$ -- 2044
-format.name$ -- 431
-if$ -- 5388
-int.to.chr$ -- 4
+duplicate$ -- 1045
+empty$ -- 2039
+format.name$ -- 433
+if$ -- 5402
+int.to.chr$ -- 3
 int.to.str$ -- 0
 missing$ -- 77
-newline$ -- 369
+newline$ -- 372
 num.names$ -- 220
-pop$ -- 406
+pop$ -- 397
 preamble$ -- 1
-purify$ -- 520
+purify$ -- 521
 quote$ -- 0
-skip$ -- 788
+skip$ -- 792
 stack$ -- 0
-substring$ -- 2173
+substring$ -- 2200
 swap$ -- 99
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 418
 warning$ -- 2
-while$ -- 249
+while$ -- 250
 width$ -- 0
-write$ -- 940
+write$ -- 947
 (There were 2 warnings)

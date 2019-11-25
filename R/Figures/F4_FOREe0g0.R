@@ -363,7 +363,7 @@ setwd("~/Documents/Demography/Work/STADall/Github/3C-STADmodel/Chapter/Figures")
 pdf("F4.pdf",width = 10, height = 8)
 op <- par(mfrow = c(2,2),
           oma = c(2,2,0,0) + 0.1,
-          mar = c(1,2,1,1) + 0.1)
+          mar = c(1,2.7,1,1) + 0.1)
 ## bottom, left, top, right
 ## E0 - Sweden
 plot(years,e0obs_SWEfemales,t="n",main="Life Expectancy - Sweden",ylim=ylimE0,xlim=range(years,years.fore),
@@ -371,8 +371,8 @@ plot(years,e0obs_SWEfemales,t="n",main="Life Expectancy - Sweden",ylim=ylimE0,xl
 axis(1,at=seq(1960,2040,20),labels = rep("",5))
 axis(2,las=2,cex.axis=cex.y.axis)
 grid();box()
-mtext(text = expression(e^0),side=2,
-      line = 2.25,cex=cex.y.lab,las=1)
+mtext(text = expression(e[0]),side=2,
+      line = 2.75,cex=cex.y.lab,las=1)
 points(years,e0obs_SWEmales,pch=1,col=col.obs[2])
 points(years,e0obs_SWEfemales,pch=5,col=col.obs[1])
 lines(years.fore,e0_STAD_SWEmales,col=col.mod[1],lwd=2)
@@ -412,8 +412,8 @@ plot(years,g0obs_SWEfemales,t="n",main="Gini - Sweden",ylim=ylimG0,xlim=range(ye
 axis(1,at=seq(1960,2040,20))
 axis(2,las=2,cex.axis=cex.y.axis)
 grid();box()
-mtext(text = expression(g^0),side=2,
-      line = 2.25,cex=cex.y.lab,las=1)
+mtext(text = expression(G[0]),side=2,
+      line = 2.75,cex=cex.y.lab,las=1)
 points(years,g0obs_SWEmales,pch=1,col=col.obs[2])
 points(years,g0obs_SWEfemales,pch=5,col=col.obs[1])
 lines(years.fore,g0_STAD_SWEfemales,col=col.mod[1],lwd=2)
